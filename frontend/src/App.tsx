@@ -9,6 +9,8 @@ import { BlogArticleProvider } from './_context/BlogArticleContext'
 import BlogArticlePage from './pages/BlogArticlePage'
 import Tournaments from './pages/Tournaments'
 import { UserProvider } from './_context/UserContext'
+import OfflinePage from './pages/OfflinePage'
+import Register1 from './components/Register1'
 
 function App() {
 
@@ -35,8 +37,10 @@ function App() {
                   <Route path='/tournaments' element={<Tournaments />} >
                     <Route path='/tournaments/latest' />
                     <Route path='/tournaments/upcoming' />
-
                   </Route>
+                  <Route path='/offline' element={<OfflinePage />} />
+                  <Route path='/Register1' element={<Register1 />} />
+                  <Route path='/Register2' element={<OfflinePage />} />
 
                 </Routes>
               </div>
